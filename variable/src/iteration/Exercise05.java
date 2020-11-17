@@ -9,9 +9,9 @@ public class Exercise05 {
 				int result =(4*x)+(5*y);
 				
 				if(result == 60) {
-					break;
+					System.out.println("("+x+","+y+")");
 				}
-				System.out.println("("+x+","+y+")");
+				
 			} 
 		} 
 
