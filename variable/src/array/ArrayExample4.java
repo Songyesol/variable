@@ -34,7 +34,35 @@ public class ArrayExample4 {
 		 * intAry2[0] => 합: ??, 평균: ??
 		 * intAry2[1] => 합: ??, 평균: ??
 		 * intAry2[3] => 합: ??, 평균: ??*/
+		int sum = 0;
+		int avg = 0;
+		sum = arySum(intAry2[0]);
+		avg = aryAvg(intAry2[0]);
+		System.out.println("intAry[0] ==> 합: " + sum + ", 평균: "+avg);
 
+		sum = arySum(intAry2[1]);
+		avg = aryAvg(intAry2[1]);
+		System.out.println("intAry[1] ==> 합: " + sum + ", 평균: "+avg);
+	
+		sum = arySum(intAry2[2]);
+		avg = aryAvg(intAry2[2]);
+		System.out.println("intAry[2] ==> 합: " + sum + ", 평균: "+avg);
 	}
 
+	public static int arySum(int[] ary) {
+		int sum =0;
+		for(int num : ary) {
+			sum += num;
+		}
+		return sum;
+	}
+	public static int aryAvg(int[] ary) {
+		int avg =0;
+		int sum=0;
+		for(int num : ary) {
+			sum += num;
+			avg = sum/ary.length;
+		}
+		return avg;
+}
 }
